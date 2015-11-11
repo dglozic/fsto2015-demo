@@ -29,6 +29,7 @@ var path = require('path')
 var page1 = require('./controllers/page1');
 var page2 = require('./controllers/page2');
 var spa = require('./controllers/spa');
+var header = require('./controllers/header');
 
 var app = express();
 
@@ -62,6 +63,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', page1.get);
 app.get('/page2', page2.get);
 app.get('/spa*', spa.get);
+app.get('/header', header.get);
 
 var server = app.listen(app.get('port'), function() {
 

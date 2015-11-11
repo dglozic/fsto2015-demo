@@ -1,0 +1,17 @@
+
+<section class='header' id='header'>
+  <div class='header-title'>FSTO 2015 Demo</div>
+  <nav class='header-links'>
+    <ul>
+      <li class='header-link {@eq key=selection value="header-home"}header-selected{/eq}' id='header-home'>
+        <a href='/'>Home</a>
+      </li>
+      <li class='header-link {@eq key=selection value="header-page2"}header-selected{/eq}' id='header-page2'>
+        <a href='/page2'>Page 2</a>
+      </li>
+      <li class='header-link {@eq key=selection value="header-spa"}header-selected{/eq}' id='header-spa'>
+        <a href='/spa/section1'>React SPA</a>
+      </li>            
+    </ul>
+  </nav>
+</section>

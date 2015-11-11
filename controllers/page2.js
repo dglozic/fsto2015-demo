@@ -1,6 +1,8 @@
 
 'use strict';
 
+var crequest = require("../lib/cached_request");
+
 module.exports.get = function(req, res) {
 	var settings = {
     title: 'Page 2 - FSTO 2015 Demo',
@@ -8,5 +10,12 @@ module.exports.get = function(req, res) {
     selection: 'header-page2'
 	};
 
-  res.render('page2.dust', settings);
+	var headerUrl = "http://"+req.headers.host+"/header?selection=header-page2&title="+settings.title;
+  
+  crequest.get(headerUrl, null, function (err, body) {
+  	if (err)
+  		console.log(err);
+  	settings.header = body;
+  	res.render('page2.dust', settings);
+  });
 }

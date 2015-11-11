@@ -1,0 +1,5 @@
+{>"layout"/}
+{<mainContent}
+  <h2>Page 2</h2>
+  <p>Another example of a plain server-side rendered using Dust.js library.</p>
+{/mainContent}

@@ -1,0 +1,9 @@
+---
+applications:
+- name: FSTO 2015 Demo
+  host: fsto-2015-demo
+  domain: mybluemix.net
+  memory: 256M
+  instances: 1
+  path: .
+  command: node index.js

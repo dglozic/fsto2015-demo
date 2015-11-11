@@ -1,0 +1,7 @@
+{>"layout"/}
+{<mainContent}
+<div id="react-mount-node">{spa|s}</div>
+{/mainContent}
+{<javascript}
+<script src="/bundle.js"></script>
+{/javascript}

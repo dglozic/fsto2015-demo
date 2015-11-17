@@ -1,5 +1,0 @@
-{>"layout"/}
-{<mainContent}
-	<h2>Home</h2>
-	<p>An example of a plain server-side Dust.js page.</p>
-{/mainContent}

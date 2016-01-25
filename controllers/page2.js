@@ -10,7 +10,7 @@ module.exports.get = function(req, res) {
     selection: 'header-page2'
 	};
 
-	var headerUrl = "http://"+req.headers.host+"/header?selection=header-page2;
+	var headerUrl = "http://"+req.headers.host+"/header?selection=header-page2";
   
   crequest.get(headerUrl, null, function (err, body) {
   	if (err)
